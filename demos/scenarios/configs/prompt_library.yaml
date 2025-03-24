@@ -12,7 +12,7 @@ mode:
       prompt_template: |
         {user_msg}
       emb_model_id: text embedding ada 002 [vellm-openai2]
-      llm_model_id: gpt 35 Turbo [vellm-openai2]
+      llm_model_id: llama-3.3-70b-versatile [vellm-openai2]
       prepend_system_prompts: False
       prepend_system_guidelines: False
 
@@ -21,7 +21,7 @@ mode:
       prompt_template: |
         {user_msg}
       emb_model_id: text embedding ada 002 [vellm-openai2]
-      llm_model_id: gpt 35 Turbo [vellm-openai2]
+      llm_model_id: llama-3.3-70b-versatile [vellm-openai2]
       prepend_system_prompts: False
       prepend_system_guidelines: False
 

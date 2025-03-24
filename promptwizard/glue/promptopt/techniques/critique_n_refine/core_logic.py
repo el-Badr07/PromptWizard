@@ -546,6 +546,7 @@ class CritiqueNRefine(PromptOptimizer, UniversalBaseClass):
         else:
             print("Generating Sythetic Examples....")
             train_examples = self.generate_best_examples_zero_shot(params)
+            print("Synthetic examples generated....",train_examples)
             with open("train_synthetic.jsonl", 'w') as file:
                 for record in train_examples:
                     json.dump(record, file)

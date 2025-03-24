@@ -21,7 +21,8 @@ def call_api(messages):
     from openai import AzureOpenAI
 
     if os.environ['USE_OPENAI_API_KEY'] == "True":
-        client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+        client = OpenAI(api_key=os.environ["OPENAI_API_KEY"],base_url="https://api.groq.com/openai/v1"  # Add this line for Groq  
+                        )
 
         response = client.chat.completions.create(
         model=os.environ["OPENAI_MODEL_NAME"],
